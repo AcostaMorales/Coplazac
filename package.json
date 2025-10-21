@@ -1,0 +1,20 @@
+{
+  "name": "Coplazac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AcostaMorales/Coplazac.git",
+  "author": "Pablo Daniel Acosta Morales <acostamoralespablodaniel@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "client": "yarn workspace client start",
+    "server": "yarn workspace server start",
+    "start": "concurrently \"yarn client\" \"yarn server\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
